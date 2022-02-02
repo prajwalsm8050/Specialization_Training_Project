@@ -1,0 +1,42 @@
+ <h1 class = "text-center head" > Welcome Admin</h1>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active">Update User</a>
+            </li>
+        </ul>
+    </nav>
+<form (ngSubmit)="onSubmit()" class="col-5">
+    <div class="form-group ">
+        <label for="firstname">First Name</label>
+        <input type="text" class="form-control" id="firstname" [(ngModel)] = "user.firstname" name="firstname">
+    </div>
+
+      <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" class="form-control" id="lastname" [(ngModel)] = "user.lastname" name="lastname">
+    </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" id="email" [(ngModel)] = "user.email" name="email">
+    </div>
+
+      <div class="form-group">
+        <label for="adhar">Adhar Number</label>
+        <input type="number" class="form-control" id="adhar" [(ngModel)]="user.adhar" name="adhar">
+    </div>
+
+      <div class="form-group">
+        <label for="date">DOB</label>
+        <input type="date" class="form-control" id="dob" [(ngModel)]="user.dob" name="dob">
+    </div>
+    <button class="btn btn-success btn-lg btn-block" type="submit">Submit</button>
+</form>
+  <footer class="footer">
+        <div class="container">
+            <div>
+                <span> All rights Reserved 2022 @ArizonaInvestments</span>
+            </div>
+        </div>
+    </footer>

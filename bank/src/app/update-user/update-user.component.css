@@ -1,0 +1,22 @@
+form{
+    margin: auto;
+    display: block;
+    padding: 90px;
+}
+
+button{
+    margin-top: 10px;
+    width: 100%;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    width: 100%;
+
+}
+
+
